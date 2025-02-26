@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhargava's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to My World</h1>
+        <p>I'm Bhargava, a passionate tech enthusiast.</p>
+    </header>
+    <section class="about">
+        <div class="photo-frame">
+            <img src="profile.jpg" alt="Bhargava's Photo">
+        </div>
+        <p>Hey there! I'm a software engineer who loves coding, AI, and building cool tech. Let's connect and create something awesome together!</p>
+        <a href="Bhargava_CV.pdf" download class="download-btn">Download My CV</a>
+    </section>
+    <section class="experience">
+        <h2>Experience</h2>
+        <ul>
+            <li><strong>Software Engineer, Capgemini</strong> (Sep 2022 - Present)<br>Developing scalable microservices, optimizing system reliability, and enhancing deployment efficiency.</li>
+            <li><strong>Researcher, Blekinge Institute of Technology</strong> (Feb 2022 - Jun 2022)<br>Analyzed parallel computing techniques using OpenMP and Web Workers.</li>
+            <li><strong>Web Developer, Learnovate</strong> (Aug 2021 - Oct 2021)<br>Built responsive web applications for an e-commerce platform.</li>
+        </ul>
+    </section>
+    <section class="projects">
+        <h2>Projects</h2>
+        <ul>
+            <li><strong>Project Name 1</strong> - <a href="#">GitHub Link</a><br>Brief description of the project.</li>
+            <li><strong>Project Name 2</strong> - <a href="#">GitHub Link</a><br>Brief description of the project.</li>
+            <li><strong>Project Name 3</strong> - <a href="#">GitHub Link</a><br>Brief description of the project.</li>
+        </ul>
+    </section>
+    <section class="skills">
+        <h2>Skills</h2>
+        <p>Python, Java, JavaScript, Spring Boot, ReactJS, Docker, Kubernetes, AWS, GCP, Kafka, Machine Learning, AI, DevOps.</p>
+    </section>
+    <section class="certifications">
+        <h2>Certifications</h2>
+        <ul>
+            <li>Google Associate Cloud Engineer</li>
+            <li>Java Certified - Hacker Rank</li>
+            <li>Python Certified – Hacker Rank</li>
+            <li>Kafka Fundamental - Confluent</li>
+            <li>Postman Certified</li>
+        </ul>
+    </section>
+    <section class="contact">
+        <h2>Get in Touch</h2>
+        <form id="contact-form">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+        <div class="social-links">
+            <a href="https://linkedin.com/in/bhargava">LinkedIn</a>
+            <a href="https://twitter.com/bhargava">Twitter</a>
+            <a href="https://instagram.com/bhargava">Instagram</a>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; 2025 Bhargava. Hosted on GitHub Pages.</p>
+    </footer>
+    <script>
+        document.getElementById("contact-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            let formData = new FormData(this);
+            let mailtoLink = `mailto:bhargavabhamidipati@gmail.com?subject=Message from ${formData.get('name')}&body=${formData.get('message')}%0A%0AFrom: ${formData.get('email')}`;
+            window.location.href = mailtoLink;
+        });
+    </script>
+</body>
+</html>
