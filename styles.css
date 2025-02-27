@@ -22,18 +22,24 @@ h1, h2 {
     margin-bottom: 10px;
 }
 
-.photo-frame img {
-    width: 150px;
+.photo-frame {
+    width: 150px; /* Adjust size as needed */
     height: 150px;
     border-radius: 50%;
-    border: 3px solid #444;
+    overflow: hidden;
+    border: 3px solid #ccc; /* Optional: adds a border */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s;
 }
 
-.photo-frame img:hover {
-    transform: scale(1.05);
+.photo-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image fills the frame properly */
 }
+
 
 .download-btn {
     display: inline-block;
